@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Astronauta</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      width: 100%;
+    }
+
+    body {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    #esp {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* cobre toda a tela sem distorção */
+      z-index: -1; /* joga a imagem de fundo para trás */
+    }
+
+    img:not(#esp) {
+      width: 300px; /* ou qualquer tamanho desejado */
+    }
+  </style>
+</head>
+<body>
+  <img id="esp" src="imagens/espaco.jpg" alt="espaco">
+  <img src="imagens/astronauta.png" alt="astronauta">
+</body>
+</html>

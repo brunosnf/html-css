@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body{
+            font-family: 'work Sans', Helvetica, sans-serif;
+            /* 
+            Medidas Absolutas
+            cm (centimetro),
+            mm (milimetro),
+            in (Polegada),
+            px (pixel),
+            pt (ponto),
+            pc (paica).
+
+            Medidas Relativas
+            em (Relativo a autura M de uma fonte),
+            ex (Relativo a autura x de uma fonte),
+            rem (Reativo a fonte do body.),
+            vw (porcentagem da largura vilport(tela do usuario)),
+            vh (a autura da vilport),
+            % 
+            RECOMENDADO USAR PX OU EM !!!
+            16px geralmente = 1em
+            */
+            font-size: 16px;
+            
+            
+            /*
+            weight = peso
+            width = Largura
+            height = Altura
+            */
+
+            /*
+            Tipos de peso
+            lighter (mais fininho)
+            normal
+            bold (Negrito)
+            bolder (mais negrito)
+
+            variação numerica
+            100 - 900
+
+            */
+        }
+
+        h1 {
+            
+            /*Shorthand font
+            
+            -font-style -> font-weight -> font-size -> font-family
+
+            font-family: 'work Sans',sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;*/
+
+            font: italic bolder 3em 'work Sans', sans-serif;
+        }
+        h2{
+            font: bold 2em 'work Sans';
+        }
+
+    </style>
+    
+</head>
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, necessitatibus laborum non voluptatem, unde qui explicabo molestiae alias assumenda veritatis eos inventore labore deleniti suscipit nam quibusdam. Nisi, sunt veniam? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae provident fuga vero, voluptatibus facere id atque, repudiandae asperiores mollitia assumenda iusto suscipit corrupti ad minima quaerat expedita dolorem similique ab! Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae consectetur esse harum quasi, consequuntur ullam voluptas odit amet vero, voluptatum dolore modi autem minima facere numquam est officia impedit rerum.</p><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus sed nesciunt unde nam maiores, assumenda consequuntur adipisci, temporibus deserunt reprehenderit earum. Numquam, voluptatem deleniti odio alias commodi cupiditate perspiciatis reiciendis.</p>
+    <h2>subtitulo do exercicio</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos reprehenderit fugiat fuga autem beatae, quis perspiciatis natus, repellat, minima laboriosam corporis suscipit recusandae! Reprehenderit labore delectus porro perspiciatis debitis sequi?</p>
+</body>
+</html>
